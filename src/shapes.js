@@ -97,7 +97,7 @@ export const AXIS_SHAPE = PropTypes.shape({
 });
 
 export const BAR_SHAPE = PropTypes.shape({
-  width: PropTypes.number,
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
   zerobased: PropTypes.bool
 });
 
