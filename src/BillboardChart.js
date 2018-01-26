@@ -244,6 +244,7 @@ class BillboardChart extends Component {
     donut: DONUT_SHAPE,
     gauge: GAUGE_SHAPE,
     grid: GRID_SHAPE,
+    id: PropTypes.string,
     interaction: INTERACTION_SHAPE,
     isPure: PropTypes.bool,
     legend: LEGEND_SHAPE,
@@ -299,12 +300,13 @@ class BillboardChart extends Component {
   updateChart = createUpdateChart(this);
 
   render() {
-    const {className, style} = this.props;
+    const {id, className, style} = this.props;
 
     return (
       /* eslint-disable prettier */
       <div
         className={className}
+        id={id}
         ref={this.setChartRef}
         style={style}
       />
