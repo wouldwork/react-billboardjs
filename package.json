@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/planttheidea/react-billboardjs/issues"
   },
-  "name": "react-billboardjs",
+  "name": "@wouldwork/react-billboardjs",
   "dependencies": {
     "billboard.js": "^1.2.0",
     "prop-types": "^15.6.0"
